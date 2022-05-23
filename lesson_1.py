@@ -60,11 +60,5 @@ for i in row:
 print (new_row)
 
 # 5. Заменить все буквы "х" на "у" в исходной строке без использования дополнительной строки.
-new_message = ''
-VOWELS = 'x'
-for letter in 'asdxfghyxyx':
-    if letter.lower() not in VOWELS:
-        new_message += letter
-    elif letter.lower() in VOWELS:
-        new_message += 'y'
-print ('\nВот ваш текст: ', new_message)
+message = 'asdxfghyxyx'
+print ('\nВот ваш текст: ', message.replace('x', 'y'))
