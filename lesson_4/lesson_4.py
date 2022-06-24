@@ -2,8 +2,7 @@ from lesson_4_1 import CompareFactory
 import pprint
 
 def main():
-    new_name_list = []
-    user_input = 0     
+    new_name_list = []  
     word_list = ['компьютер', 'компьютеризация', 'роза', 'море', 'горе', 'гора', 'персона', 'персонализация', 'терраса', 'территория', 'поза', 'лоза', 'компьютерщик', 'персональность', 'индивидуальность']
     print ('''
     Методы сравнения строк:
@@ -14,7 +13,7 @@ def main():
     ''')
     user_input = int(input ('Выберите метод сравнения строк: '))
     while user_input < 1 or user_input > 4:
-        user_input = int(input ('Введите правильное значение от 1 до 3: '))
+        user_input = int(input ('Введите правильное значение от 1 до 4: '))
     comparer = CompareFactory.create(user_input)
     for i in word_list:
         for j in word_list:
