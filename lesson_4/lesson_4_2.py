@@ -1,7 +1,6 @@
 from fuzzywuzzy import fuzz
 from similarity.jarowinkler import JaroWinkler
 from similarity.normalized_levenshtein import NormalizedLevenshtein
-import pprint
 import unittest
 
 class CompareGeneral():
