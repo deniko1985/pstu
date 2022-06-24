@@ -33,7 +33,7 @@ class CompareByMethod4(CompareGeneral):
 
 if __name__ == '__main__':
     class TestCompare (unittest.TestCase):
-        def test_CompareByMethod1(self):
+        def test_CompareByMethod(self):
             self.assertEqual(CompareByMethod1.compare(self, 'море', 'гора'), ('море', 'гора', 0.0))  
             self.assertEqual(CompareByMethod1.compare(self, 'компьютер', 'компьютеризация'), ('компьютер', 'компьютеризация', 0.6))
             self.assertEqual(CompareByMethod2.compare(self, 'море', 'гора'), ('море', 'гора', 0.6666666666666666))
