@@ -33,27 +33,15 @@ class CompareByMethod4(CompareGeneral):
 
 if __name__ == '__main__':
     class TestCompare (unittest.TestCase):
-        def test_CompareByMethod(self):
-            method1 = []
-            method2 = []
-            method3 = []
-            method4 = []
-            word_list = ['компьютер', 'компьютеризация', 'роза', 'море', 'горе', 'гора']
-            for S1 in word_list:
-                for S2 in word_list:
-                    if S1 != S2:                        
-                        method1.append(CompareByMethod1.compare (self, S1, S2))                        
-                        method2.append(CompareByMethod2.compare (self, S1, S2))                        
-                        method3.append(CompareByMethod3.compare (self, S1, S2))                        
-                        method4.append(CompareByMethod4.compare (self, S1, S2))
-            print ('Метод 1:')
-            pprint.pprint (method1) 
-            print ('Метод 2:')
-            pprint.pprint (method2) 
-            print ('Метод 3:')
-            pprint.pprint (method3) 
-            print ('Метод 4:')
-            pprint.pprint (method4)                            
+        def test_CompareByMethod1(self):
+            self.assertEqual(CompareByMethod1.compare(self, 'море', 'гора'), ('море', 'гора', 0.0))  
+            self.assertEqual(CompareByMethod1.compare(self, 'компьютер', 'компьютеризация'), ('компьютер', 'компьютеризация', 0.6))
+            self.assertEqual(CompareByMethod2.compare(self, 'море', 'гора'), ('море', 'гора', 0.6666666666666666))
+            self.assertEqual(CompareByMethod2.compare(self, 'компьютер', 'компьютеризация'), ('компьютер', 'компьютеризация', 0.9466666666666667))
+            self.assertEqual(CompareByMethod3.compare(self, 'море', 'гора'), ('море', 'гора', 0.5))  
+            self.assertEqual(CompareByMethod3.compare(self, 'компьютер', 'компьютеризация'), ('компьютер', 'компьютеризация', 0.9))
+            self.assertEqual(CompareByMethod4.compare(self, 'море', 'гора'), ('море', 'гора', 0.5))  
+            self.assertEqual(CompareByMethod4.compare(self, 'компьютер', 'компьютеризация'), ('компьютер', 'компьютеризация', 0.4))                     
     
     unittest.main()
 
