@@ -7,7 +7,7 @@ import unittest
 class CompareGeneral():
     pass
 
-class СountCompare(CompareGeneral):
+class CountCompare(CompareGeneral):
 
     def compare(self, S1, S2):
         ngrams = [S1[i:i+3] for i in range(len(S1))]
