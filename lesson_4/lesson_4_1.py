@@ -6,13 +6,13 @@ class CompareFactory():
     def create(method):
         match method:
             case 1:
-                return CompareByMethod1()
+                return СountCompare()
             case 2:
-                return CompareByMethod2()
+                return JaroWinklerCompare()
             case 3:
-                return CompareByMethod3()
+                return FuzzywuzzyCompare()
             case 4:
-                return CompareByMethod4()
+                return LevenshteinCompare()
 
 if __name__ == '__main__':
     print ('Данный модуль работает!')
