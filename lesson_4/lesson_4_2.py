@@ -4,7 +4,9 @@ from similarity.normalized_levenshtein import NormalizedLevenshtein
 import unittest
 
 class CompareGeneral():
-    pass
+    
+    def compare():
+        pass
 
 class CountCompare(CompareGeneral):
 
