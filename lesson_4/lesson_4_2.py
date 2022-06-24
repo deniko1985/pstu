@@ -5,8 +5,8 @@ import unittest
 
 class CompareGeneral():
     
-    def compare():
-        pass
+    def compare(self, S1, S2):
+        raise Exception("Метод Compare не реализован")
 
 class CountCompare(CompareGeneral):
 
