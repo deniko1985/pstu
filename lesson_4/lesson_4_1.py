@@ -6,7 +6,7 @@ class CompareFactory():
     def create(method):
         match method:
             case 1:
-                return СountCompare()
+                return CountCompare()
             case 2:
                 return JaroWinklerCompare()
             case 3:
