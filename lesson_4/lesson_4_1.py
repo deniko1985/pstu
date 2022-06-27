@@ -1,4 +1,4 @@
-from lesson_4_2 import*
+from lesson_4_2 import СountCompare, JaroWinklerCompare, FuzzywuzzyCompare, LevenshteinCompare  
 
 class CompareFactory():
 
