@@ -32,7 +32,8 @@ def words(name_text):
     return new_name_list_2
 
 def compare (S1, S2):
-    ngrams = [S1[i:i+3] for i in range(len(S1))] # В переменной создается ссылка на список со срезами входного слова
+    # В переменной создается ссылка на список со срезами входного слова
+    ngrams = [S1[i:i+3] for i in range(len(S1))]
     count = 0
     for ngram in ngrams:
         count += S2.count(ngram) 
